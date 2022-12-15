@@ -52,24 +52,25 @@ body {
 
 .until {
     margin: 25px;
-    max-width: 450px;
+    max-width: 400px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap:10px;
     padding: 10px;
-    background: rgba(196, 74, 74, 0.308);
+    background: rgba(6, 94, 64, 0.308);
     border-radius: 15px;
     box-shadow:  0 0 5px rgba (0, 0, 0, 0.3);
     font-family: sans-serif;
     font-size: 15px;
     position: absolute;
     top: 380px;
-    left: 550px;
-    color: darkred;
+    left: 600px;
+    color: white;
+    font-style: oblique;
 
 }
 
-.until-box {
+.until__component {
     text-align: center;
     border-radius: 5px;
     border: 10px green;
@@ -82,18 +83,18 @@ body {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    background-color: #f2dede;
+    background-color: darkred;
     border-radius: 5%;
     margin-bottom: 10px;
-    border: 5px dashed darkred;
+    border: 2px normal white;
 }
 
 .until__unit {
     padding: 5px 16px 5px;
     font-weight: bold;
-    background-color: #f2dede;
+    background-color: darkred;
     border-radius: 5%;
-    border: 5px dashed darkred;
+    /* border: 2px dashed white; */
 
 }
 
@@ -101,10 +102,83 @@ body {
     text-align: center;
     grid-column: span 4;
     font-weight: bold;
-    background-color: #f2dede;
+    background-color: darkred;
     border-radius: 1%;
     padding: 10px 0;
-    border: 5px dashed darkred;
+    /* border: 2px dashed white; */
     
 
 }
+
+
+
+/* //for tablets  */
+
+@media screen and  (max-width: 991px) {
+    body {
+        background-size: cover;
+        background-position: -456px;
+        max-width: 100%;
+        max-height: 100vh;
+        
+    }
+
+    .until {
+        position: absolute;
+        left: 150px;
+        top: 500px;
+        font-family: sans-serif;
+        font-size: 25px;
+        max-width: 100%;
+    }
+
+
+    .until__numeric {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    body {
+        background-size: cover;
+        background-position: -316px;
+        max-height: 100vh;   
+    }
+
+    .until {
+        position: absolute;
+        left: -10px;
+        top: 500px;
+        font-family: sans-serif;
+        font-size: 17px;
+        max-width: min-content;
+        gap: 1px;
+        color: black;
+        grid-template-columns: repeat(4, 90px);
+    }
+    .until__component {
+        max-width: 90%;
+        
+    }
+    .until__numeric {
+        background-color: aliceblue;
+        border: 4px dashed darkred;
+        font-size: 19px;
+    }
+    .until__unit {
+        background-color: aliceblue;
+        border: 4px dashed darkred;
+        padding: 3px 5px 3px;
+    }
+
+    .until__event {
+        padding: 5px 10px;
+        position: absolute;
+        left: 66px;
+        top: 102px;
+        grid-column: span 3;
+        background-color: aliceblue;
+        border: 4px dashed darkred;
+    }
+}
+    
