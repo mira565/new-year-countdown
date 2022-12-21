@@ -132,7 +132,6 @@ body {
         max-width: 100%;
     }
 
-
     .until__numeric {
         font-size: 25px;
     }
@@ -161,13 +160,13 @@ body {
         
     }
     .until__numeric {
-        background-color: aliceblue;
-        border: 4px dashed darkred;
+        background-color: darkred;
+        /* border: 4px dashed darkred; */
         font-size: 19px;
     }
     .until__unit {
-        background-color: aliceblue;
-        border: 4px dashed darkred;
+        background-color: darkred;
+        /* border: 4px dashed darkred; */
         padding: 3px 5px 3px;
     }
 
@@ -177,8 +176,8 @@ body {
         left: 66px;
         top: 102px;
         grid-column: span 3;
-        background-color: aliceblue;
-        border: 4px dashed darkred;
+        background-color: darkred;
+        /* border: 2px dashed darkred; */
     }
 }
     
