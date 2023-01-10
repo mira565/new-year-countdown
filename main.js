@@ -47,7 +47,7 @@ if (duration.asMilliseconds() <=0) return;  // условие чтобы неб�
 
 }
 
-activateCountdown(document.getElementById("myCountdown"), "2022-12-31");  //activate this countdown till 2022
+activateCountdown(document.getElementById("myCountdown"), "2023-12-31");  //activate this countdown till 2022
 
 
 
